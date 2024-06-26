@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather App</title>
+    <link rel="icon" href="./assets/weather-app-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <!-- <h1>Navbar</h1> -->
+        <div class="nav_logo">
+          <img src="./assets/weather-app-logo.png" alt="weather-app-logo" />
+        </div>
+        <div class="nav_links">
+          <i class="fa-solid fa-location-dot"></i>
+          <i class="fa-solid fa-cloud"></i>
+          <i class="fa-solid fa-bolt fa-fw"></i>
+          <i class="fa-solid fa-cloud-rain"></i>
+        </div>
+        <div class="nav-setting">
+          <i class="fa-solid fa-gear"></i>
+        </div>
+      </div>
+      <div class="dashboard">
+        <!-- <h3>dashboard</h3> -->
+        <div class="dashboard-header">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Enter CityName" id="input-box" />
+            <button id="input-btn">Search</button>
+          </div>
+          <div class="about-me">
+            <p>&copy; <span>Ravindra</span> Yadav</p>
+          </div>
+        </div>
+
+        <div class="dashboard-content">
+          <div class="left-dashboard-content">
+            <div class="weather-info">
+              <!-- <h2>weather-info</h2> -->
+              <div class="location-info">
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h1 id="location-para"></h1>
+                </div>
+              </div>
+              <div class="weather-info-down">
+                <div class="weather-temp">
+                  <h1 id="temp"></h1>
+                  <p id="feeltemp"></p>
+                </div>
+                <div class="weather-img">
+                  <img src="./assets/weather-app-logo.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="week-weather-info">
+              <p class="air-quality-heading">Air Quality</p>
+              <div class="air-quality-up">
+                <div class="o3">
+                  <p class="today-highlight-para">Ozone</p>
+                  <div class="air-div">
+                    <h1 id="ozone"></h1>
+                    <img src="./assets/ozone.png" alt="" />
+                  </div>
+                </div>
+                <div class="so2">
+                  <p class="today-highlight-para">Sulphur Dioxide</p>
+                  <div class="air-div">
+                    <h1 id="so2head"></h1>
+                    <img src="./assets/so2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="air-quality-down">
+                <div class="no2">
+                  <p class="today-highlight-para">Nitrogen Dioxide</p>
+                  <div class="air-div">
+                    <h1 id="no2head"></h1>
+                    <img src="./assets/dioxide.png" alt="" />
+                  </div>
+                </div>
+                <div class="co">
+                  <p class="today-highlight-para">Corbon Monoxide</p>
+                  <div class="air-div">
+                    <h1 id="cohead"></h1>
+                    <img src="./assets/co.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-dashboard-content">
+            <div class="today-highlight">
+              <p class="today-highlight-heading">Today's Highlight</p>
+              <div class="today-highlight-up">
+                <div class="chances-rain">
+                  <p class="today-highlight-para">Chances of Rain</p>
+                  <div class="highlight-div">
+                    <h1 id="chance-rain"></h1>
+                    <img src="./assets/rainy-day.png" alt="" />
+                  </div>
+                </div>
+                <div class="uv-index">
+                  <p class="today-highlight-para">UV Index</p>
+                  <div class="highlight-div">
+                    <h1 id="uv"></h1>
+                    <img src="./assets/ultraviolet.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="today-highlight-down">
+                <div class="wind-status">
+                  <p class="today-highlight-para">Wind Status</p>
+                  <div class="highlight-div">
+                    <h1 id="wind-head"></h1>
+                    <img src="./assets/wind.png" alt="" />
+                  </div>
+                </div>
+                <div class="humidity">
+                  <p class="today-highlight-para">Humidity</p>
+                  <div class="highlight-div">
+                    <h1 id="humidity-head"></h1>
+                    <img src="./assets/humidity.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="other-cities">
+              <p>Other Info</p>
+              <button>Show All</button>
+            </div>
+            <div class="other-cities-info">
+              <div class="first-city">
+                <p>Pressure</p>
+              </div>
+              <div class="second-city">
+                <img src="./assets/clouds-and-sun.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
